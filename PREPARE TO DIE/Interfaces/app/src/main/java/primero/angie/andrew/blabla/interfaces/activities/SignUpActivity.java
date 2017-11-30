@@ -69,6 +69,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
 
+    //In case SignUp is Successful
     public void onSignupSuccess() {
         // instance a user
         String name = _nameText.getText().toString();
@@ -101,10 +102,12 @@ public class SignUpActivity extends AppCompatActivity {
 
     }
 
+    //In Case SignUp fails...
     public void onSignupFailed() {
         Toast.makeText(getBaseContext(), R.string.ErrorLog , Toast.LENGTH_LONG).show();
     }
 
+    //This is to validate the input data
     public boolean validate() {
         boolean valid = true;
 
