@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // Start the Signup activity
+                // Start the Signup Activity
                 Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
                 startActivityForResult(intent, REQUEST_SIGNUP);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
@@ -96,6 +96,7 @@ public class LoginActivity extends AppCompatActivity {
         moveTaskToBack(true);
     }
 
+    //If Login is successful
     public void onLoginSuccess(String email, String password) {
 
             User user = new User();
@@ -134,13 +135,15 @@ public class LoginActivity extends AppCompatActivity {
 
     };
 
+    //If Login fails...
     public void onLoginFailed() {
 
         Toast.makeText(getBaseContext(), R.string.EmailR, Toast.LENGTH_LONG).show();
         _loginButton.setEnabled(true);
 
     }
-
+    
+    //This is to validate the input data
     public boolean validate() {
         boolean valid = true;
 
