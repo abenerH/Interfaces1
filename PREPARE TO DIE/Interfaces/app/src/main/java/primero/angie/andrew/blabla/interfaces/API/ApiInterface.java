@@ -52,7 +52,7 @@ public interface ApiInterface {
      * @return
      */
     @GET("Complaints/me")
-    Call<List<Complaint>> getMyComplaints(@Header("Authorization") String authorization);  // TODO: Hacerlo de forma dinámica con otro parámetro
+    Call<List<Complaint>> getMyComplaints(@Header("Authorization") String authorization);  
 
     /**
      * Create pictures in the API
