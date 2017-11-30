@@ -34,38 +34,27 @@ public class denunciasFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        Log.i("Still", "alive");
+
+        //Inflate the layout
         View view = inflater.inflate(R.layout.denuncias_fragment, container, false);
-        Log.i("Still", "alive 2");
-        // Call init method
+        // Call init 
         init(view);
-        Log.i("Still", "alive how ");
         return view;
     }
 
     private void init(View view) {
-        Log.i("Still", "alive 3");
         recyclerView = view.findViewById(R.id.recycler_view);
-        Log.i("Still", "alive 4");
         recyclerView.setHasFixedSize(true);
-        Log.i("Still", "alive 5");
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        Log.i("Still", "alive 6");
-
+        
         Call<List<Complaint>> call = Api.instance().getComplaints(Remember.getString("access_token", " "));
-        Log.i("Still", "alive 7");
         call.enqueue(new Callback<List<Complaint>>() {
 
             @Override
             public void onResponse(Call<List<Complaint>> call, Response<List<Complaint>> response) {
-                Log.i("Still", "alive 8");
                 if (response.body() != null) {
-                    Log.i("Still", "alive 9");
                     ComplaintsAdapter complaintsAdapter = new ComplaintsAdapter(response.body(), getContext());
-                    Log.i("Still", "alive 10");
                     recyclerView.setAdapter(complaintsAdapter);
-                    Log.i("Still", "alive 11");
                 }
             }
 
