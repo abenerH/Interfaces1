@@ -3,12 +3,12 @@ package primero.angie.andrew.blabla.interfaces.clases;
         import java.util.ArrayList;
 
 /**
- * Created by macyarin on 3/11/17.
+ * Created by thech on 3/11/17.
  */
 
 /*
-* Esta clase es la que se encarga de proveer un modelo para trabajar con las imágenes asociadas a
-* una denuncia. Esta contiene los atributos title, url y complaintId.
+* This class has the function of provide a model to work with assocciated images to a complaint. This
+* containts the title, complaintId and Url
 * */
 
 public class Picture extends android.graphics.Picture {
