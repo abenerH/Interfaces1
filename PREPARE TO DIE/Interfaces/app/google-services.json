@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "848945632820",
+    "firebase_url": "https://informante-90681.firebaseio.com",
+    "project_id": "informante-90681",
+    "storage_bucket": "informante-90681.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848945632820:android:a3037fd327aa68e8",
+        "android_client_info": {
+          "package_name": "primero.angie.andrew.blabla.interfaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848945632820-dui9vsvu9kjfnndj4ggtpvb0pipbfo31.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "primero.angie.andrew.blabla.interfaces",
+            "certificate_hash": "fa10cc24c6b86bb75d46b464cdcb77be6376e595"
+          }
+        },
+        {
+          "client_id": "848945632820-4qpkaia3kp2cpulokkeeov13juli1d90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNIaZtcvmTwV-bRqOsV31l2WFhlpJrk6E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848945632820-4qpkaia3kp2cpulokkeeov13juli1d90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

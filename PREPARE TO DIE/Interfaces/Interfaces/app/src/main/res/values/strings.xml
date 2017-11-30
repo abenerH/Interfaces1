@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Interfaces</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="cargarfoto">Cargar foto</string>
+    <string name="InsT">Ingresar Titulo Aquí</string>
+    <string name="InsD">Ingresar Descripción Aquí</string>
+    <string name="Opcional">(opcional)</string>
+    <string name="InsTT">Ingresa un Titulo</string>
+    <string name="InsDT">Ingresa una Descripción</string>
+    <string name="denuncias">Denuncias</string>
+    <string name="publicar">Publicar</string>
+    <string name="misdenuncias">Mis Denuncias</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
