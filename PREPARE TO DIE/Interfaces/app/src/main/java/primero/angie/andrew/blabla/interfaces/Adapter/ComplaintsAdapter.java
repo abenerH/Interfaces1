@@ -45,13 +45,13 @@ public class ComplaintsAdapter extends RecyclerView.Adapter<ComplaintsAdapter.Vi
         }
     }
 
-    // Provide a suitable constructor (depends on the kind of dataset)
+    // Provides a suitable constructor but depends on the kind of datasets
     public ComplaintsAdapter(List<Complaint> complaints, Context context) {
         this.complaints = complaints;
         this.mContext = context;
     }
 
-    // Create new views (invoked by the layout manager)
+    // Create new views invoked by the layout manager
     @Override
     public ComplaintsAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                            int viewType) {
@@ -64,7 +64,7 @@ public class ComplaintsAdapter extends RecyclerView.Adapter<ComplaintsAdapter.Vi
         return vh;
     }
 
-    // Replace the contents of a view (invoked by the layout manager)
+    // Replace the contents of a view invoked by the layout manager
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
         final Complaint complaint = complaints.get(position);
@@ -103,7 +103,7 @@ public class ComplaintsAdapter extends RecyclerView.Adapter<ComplaintsAdapter.Vi
         });
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
+    // Return the size of your dataset invoked by the layout manager
     @Override
     public int getItemCount() {
         return complaints.size();
