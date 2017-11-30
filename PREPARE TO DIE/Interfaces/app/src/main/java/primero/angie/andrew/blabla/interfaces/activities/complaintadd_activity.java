@@ -69,7 +69,6 @@ import static primero.angie.andrew.blabla.interfaces.clases.Complaint.complaint;
     private Uri fileUri;
     private ArrayList<Uri> cameraUris;
     private ArrayList<Uri> globalUri = null;
-    private ArrayList<String> firebaseUrl;
     private StorageReference mStorage;
     private ArrayList<String> generateUrls;
 
@@ -116,7 +115,6 @@ import static primero.angie.andrew.blabla.interfaces.clases.Complaint.complaint;
     }
 
     public void cleanObjects(){
-        firebaseUrl = null;
         globalUri = null;
     }
 
